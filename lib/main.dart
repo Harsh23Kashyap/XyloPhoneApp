@@ -7,17 +7,18 @@ class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepPurpleAccent,
-        title: Text(
-          "Play Sounds",
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-      body: Player(),
-      backgroundColor: Colors.white,
-    ));
+          appBar: AppBar(
+            backgroundColor: Colors.deepPurpleAccent,
+            title: Text(
+              "Play Sounds",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          body: Player(),
+          backgroundColor: Colors.white,
+        ));
   }
 }
 
